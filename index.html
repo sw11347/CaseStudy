@@ -23,7 +23,7 @@
 
 </div>
 
-<div id="main">
+<div id="main" onload="invoice()">
     <table id = "main_table">
         <tr>
             <td id="middle_content">
@@ -59,15 +59,19 @@
         </tr>
     </table>
 </div>
-<div id="invoice_page" class="invoice">
 
-    <!-- Modal content -->
-    <div id="invoice_content">
+<!-- The Invoice -->
+<div id="myModal" class="modal">
+
+    <!-- Invoice content -->
+    <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Your invoice</p>
+        <div id = "invoicePlace">Invoice</div>
     </div>
 
 </div>
+
+
 
 <!--Footer that contains contact information of Pet Foods-->
 <div id="footer">

@@ -37,21 +37,32 @@
                 </div>
                 <div class="product_div">
                     <img class="product" src="IMG/pettoypack.jpg" height="822" width="822"/>
-                    <p>14.99</p>
+                    <p>$14.99</p>
                     <p>Select Quantity:<input class="quantity" type="number" id="pet_toys_quantity"/></p>
                     <p><button class="add_button" id="add_toys" onclick="add_to_cart(this)">Buy</button> </p>
                 </div>
 
             </td>
+            <!--            Add to cart section of the page-->
             <td id="right_content">
                 <p>Cart</p>
                 <div id="cart_div"></div>
-                <p>
-                </p>
-                <button id="show_invoice_button">Invoice</button>
+                <p></p>
+                <button id="show_invoice_button" onclick="invoice()">Invoice</button>
             </td>
         </tr>
     </table>
+</div>
+
+<!-- The Invoice -->
+<div id="myModal" class="modal">
+
+    <!-- Invoice content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id = "invoicePlace">Invoice</div>
+    </div>
+
 </div>
 <div id="footer">
     <hr>
